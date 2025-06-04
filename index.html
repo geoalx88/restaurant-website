@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">My Restaurant</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Dining Area">
+                    <div class="caption">Welcome to a Culinary Journey</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b0c0a9d7" alt="Chef Cooking">
+                    <div class="caption">Crafted with Passion</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Restaurant Interior">
+                    <div class="caption">Elegant Dining Experience</div>
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1565958011703-6b3a5b5c0ed9" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>Fresh tomatoes, mozzarella, basil. <span>$12</span></p>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Spaghetti Carbonara">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Creamy sauce, pancetta, parmesan. <span>$15</span></p>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1625937329935-efa68902e75e" alt="Caesar Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine, croutons, dressing. <span>$10</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-title">Our Story</h3>
+                    <div class="accordion-content">
+                        <p>Founded in 2015, My Restaurant has been a beloved spot in Produlesti, Romania, serving authentic dishes with a family touch.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-title">Our Chefs</h3>
+                    <div class="accordion-content">
+                        <p>Our team of expert chefs brings years of experience to create culinary masterpieces.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-title">Our Values</h3>
+                    <div class="accordion-content">
+                        <p>We prioritize fresh ingredients, excellent service, and a warm atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.1234567890123!2d25.123456!3d44.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1a9a9a9a9a9a9%3A0x1234567890abcdef!2sProdulesti%2C%20Romania!5e0!3m2!1sen!2sro!4v1623456789!5m2!1sen!2sro" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 My Restaurant. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Hours: 10 AM - 10 PM</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
